@@ -31,7 +31,7 @@ const YouTubeComponent = () => {
 
     const fetchVideos = async (searchQuery) => {
         const response = await fetch(
-            `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5000&q=${searchQuery}&key=${process.env.NEXT_PUBLIC_API_KEY}`
+            `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5000&q=${searchQuery}&key=AIzaSyAppEtM-fM7RJtJIlEOT8OfJII1qX96R6g`
         );
         const data = await response.json();
         setVideos(data.items);
